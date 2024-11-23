@@ -21,5 +21,5 @@ ENV FLASK_ENV=production
 EXPOSE 5000
 
 # Comando para rodar o Uvicorn no Flask
-CMD ["gunicorn", "app.main:app", "-b", "0.0.0.0:5000"]
+CMD ["gunicorn", "main:app", "-b", "0.0.0.0:5000"]
 
