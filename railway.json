@@ -1,0 +1,19 @@
+{
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "deploy": {
+      "dockerfile": "Dockerfile"
+    },
+    "services": [
+      {
+        "name": "web",
+        "type": "docker",
+        "env": {
+          "FLASK_APP": "app.py",
+          "FLASK_ENV": "production"
+        }
+      }
+    ]
+  }
+  
